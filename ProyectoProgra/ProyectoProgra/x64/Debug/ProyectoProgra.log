@@ -1,18 +1,2 @@
 ﻿  main.cpp
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(290,19): warning C4474: "scanf_s": se pasaron demasiados argumentos para la cadena de formato
-      D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(290,19):
-      los marcadores de posición y sus parámetros esperan 0 argumentos variádicos, pero se proporcionaron 1
-  
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(297,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(299,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(306,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(308,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(315,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(317,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(324,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(326,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(333,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(335,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(342,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
-D:\GitHub\Proyecto-Progra\ProyectoProgra\main.cpp(344,14): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
   ProyectoProgra.vcxproj -> D:\GitHub\Proyecto-Progra\ProyectoProgra\x64\Debug\ProyectoProgra.exe

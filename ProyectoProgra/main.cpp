@@ -1,5 +1,8 @@
 #include <iostream>
 #include <stdio.h>
+#include "Movie.h"
+#include "Room.h"
+#include "Schedule.h"
 
 using namespace std;
 
@@ -43,9 +46,9 @@ int main() {
 			printf("Debes tener acceso para ingresar\nIngresa la clave\n");
 			scanf_s("%d", &contrasena);
 			if (contrasena == 12345) {
-				printf("Acceso otorgado");
+				printf("Acceso otorgado\n");
 				do {
-					printf("1. Peliculas\n2. Salas\n3. Horarios\n");
+					printf("1. Peliculas\n2. Salas\n3. Horarios\n4. Regresar al menu anterior\n");
 					scanf_s("%d", &eleccion);
 					switch (eleccion) {
 					case 1:
@@ -53,7 +56,7 @@ int main() {
 						break;
 					case 2:
 						do {
-							printf("1. Sala uno\n2. Sala dos\n3. Sala tres\n4. Regresar al menu anterior");
+							printf("1. Sala uno\n2. Sala dos\n3. Sala tres\n4. Regresar al menu anterior\n");
 							scanf_s("%d", &eleccion);
 							switch (eleccion) {
 							case 1:
@@ -66,7 +69,7 @@ int main() {
 								printf("Regresando al menu anterior\n\n\n\n\n\n\n\n");
 								break;
 							default:
-								printf("Opcion invalida, intentelo de nuevo");
+								printf("Opcion invalida, intentelo de nuevo\n");
 							}
 
 						} while (eleccion != 4 && !activo);
@@ -219,7 +222,7 @@ int main() {
 					sala1 = 25;
 					sala2 = 20;
 					sala3 = 30;
-					do{
+					do {
 						printf("Por favor, escoge un horario: \n");
 						printf("1. Oppenheimer\nSala tres\n5/10/2024: Inicia 6:30 pm--Termina 8:30 pm\n");
 						printf("2. Oppenheimer\nSala tres\n7/10/2024: Inicia 4:00 pm--Termina 6:00 pm\n");
@@ -287,81 +290,82 @@ int main() {
 		case 4:
 			do {
 				printf("Para comprar debes tener un consecutivo, por favor, ingresa el consecutivo:\n");
-				scanf_s("&d", &eleccion);
-				printf("Si no deseas comprar, ingresa un 5 para regresar al menu anterior\n");
+				printf("Si no deseas comprar, ingresa un 7 para regresar al menu anterior\n");
+				scanf_s("%d", &eleccion);
 				switch (eleccion) {
-				case 3102024103:
+				case 1:
 					printf("Bien, has reservado para ver Deadpool y Wolverine el 3 de octubre a las 10:00 pm en la sala tres\n");
 					printf("Por favor, ingresa tu cedula y tu tarjeta para efectuar el pago\n");
 					printf("Cedula: \n");
-					scanf_s("%d", cedula);
+					scanf_s("%d", &cedula);
 					printf("Tarjeta: \n");
-					scanf_s("%d", tarjeta);
+					scanf_s("%d", &tarjeta);
 					printf("Registro y pago efectuados con exito!\nDisfruta de la pelicula\n Nueva Cinema\n");
 					break;
-				case 5102024931:
+				case 2:
 					printf("Bien, has reservado para ver Deadpool y Wolverine el 5 de octubre a las 9:30 pm en la sala uno\n");
 					printf("Por favor, ingresa tu cedula y tu tarjeta para efectuar el pago\n");
 					printf("Cedula: \n");
-					scanf_s("%d", cedula);
+					scanf_s("%d", &cedula);
 					printf("Tarjeta: \n");
-					scanf_s("%d", tarjeta);
+					scanf_s("%d", &tarjeta);
 					printf("Registro y pago efectuados con exito!\nDisfruta de la pelicula\n Nueva Cinema\n");
 					break;
-				case 3102024232:
+				case 3:
 					printf("Bien, has reservado para ver Intensamente 2 el 3 de octubre a las 2:30 pm en la sala dos\n");
 					printf("Por favor, ingresa tu cedula y tu tarjeta para efectuar el pago\n");
 					printf("Cedula: \n");
-					scanf_s("%d", cedula);
+					scanf_s("%d", &cedula);
 					printf("Tarjeta: \n");
-					scanf_s("%d", tarjeta);
+					scanf_s("%d", &tarjeta);
 					printf("Registro y pago efectuados con exito!\nDisfruta de la pelicula\n Nueva Cinema\n");
 					break;
-				case 3102024631:
+				case 4:
 					printf("Bien, has reservado para ver Intensamente 2 el 3 de octubre a las 6:30 pm en la sala uno\n");
 					printf("Por favor, ingresa tu cedula y tu tarjeta para efectuar el pago\n");
 					printf("Cedula: \n");
-					scanf_s("%d", cedula);
+					scanf_s("%d", &cedula);
 					printf("Tarjeta: \n");
-					scanf_s("%d", tarjeta);
-					printf("Registro y pago efectuados con exito!\nDisfruta de la pelicula\n Nueva Cinema\n");
-					break;
-				case 5102024633:
-					printf("Bien, has reservado para ver Oppenheimer el 5 de octubre a las 6:30 pm en la sala tres\n");
-					printf("Por favor, ingresa tu cedula y tu tarjeta para efectuar el pago\n");
-					printf("Cedula: \n");
-					scanf_s("%d", cedula);
-					printf("Tarjeta: \n");
-					scanf_s("%d", tarjeta);
-					printf("Registro y pago efectuados con exito!\nDisfruta de la pelicula\n Nueva Cinema\n");
-					break;
-				case 7102024403:
-					printf("Bien, has reservado para ver Deadpool y Wolverine el 7 de octubre a las 4:00 pm en la sala tres\n");
-					printf("Por favor, ingresa tu cedula y tu tarjeta para efectuar el pago\n");
-					printf("Cedula: \n");
-					scanf_s("%d", cedula);
-					printf("Tarjeta: \n");
-					scanf_s("%d", tarjeta);
+					scanf_s("%d", &tarjeta);
 					printf("Registro y pago efectuados con exito!\nDisfruta de la pelicula\n Nueva Cinema\n");
 					break;
 				case 5:
+					printf("Bien, has reservado para ver Oppenheimer el 5 de octubre a las 6:30 pm en la sala tres\n");
+					printf("Por favor, ingresa tu cedula y tu tarjeta para efectuar el pago\n");
+					printf("Cedula: \n");
+					scanf_s("%d", &cedula);
+					printf("Tarjeta: \n");
+					scanf_s("%d", &tarjeta);
+					printf("Registro y pago efectuados con exito!\nDisfruta de la pelicula\n Nueva Cinema\n");
+					break;
+				case 6:
+					printf("Bien, has reservado para ver Deadpool y Wolverine el 7 de octubre a las 4:00 pm en la sala tres\n");
+					printf("Por favor, ingresa tu cedula y tu tarjeta para efectuar el pago\n");
+					printf("Cedula: \n");
+					scanf_s("%d", &cedula);
+					printf("Tarjeta: \n");
+					scanf_s("%d", &tarjeta);
+					printf("Registro y pago efectuados con exito!\nDisfruta de la pelicula\n Nueva Cinema\n");
+					break;
+				case 7:
 					printf("Regresando al menu anterior\n\n\n\n\n\n\n\n");
 					break;
 				default:
 					printf("Numero de consecutivo inexistente, intentalo de nuevo\n");
 					break;
+
 				}
-			} while (eleccion != 5 && !activo);
+
+
+			} while (eleccion != 7 && !activo);
 			break;
 
 		default:
 			printf("Opcion no valida, intentelo de nuevo");
 			break;
 		}
-		
-
-	} 
+	}
 	while (!activo);
-
+	
 	return 0;
 }
