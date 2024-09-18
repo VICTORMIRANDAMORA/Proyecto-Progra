@@ -1,6 +1,5 @@
 #include "Movie.h"
-Movie::Movie(string _name, int _year, int _length, string _country, string _review) {
-	name = _name;
+Movie::Movie(int _year, int _length, string _country, string _review) {
 	year = _year;
 	length = _length;
 	country = _country;
@@ -11,3 +10,17 @@ Movie::~Movie() {
 
 }
 
+int Movie::getYear() {
+	return year;
+}
+int Movie::getLength() {
+	return length;
+}
+
+string Movie::getCountry() {
+	return country;
+}
+
+string Movie::getReview() {
+	return review;
+}

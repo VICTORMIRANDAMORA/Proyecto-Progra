@@ -1,2 +1,3 @@
-﻿  main.cpp
+﻿  Room.cpp
+D:\GitHub\Proyecto-Progra\ProyectoProgra\Room.cpp(51,7): warning C4101: 'state': variable local sin referencia
   ProyectoProgra.vcxproj -> D:\GitHub\Proyecto-Progra\ProyectoProgra\x64\Debug\ProyectoProgra.exe

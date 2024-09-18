@@ -7,12 +7,18 @@ using namespace std;
 class Room
 {
 private:
-	int number;
-	int seats;
+	int rows;
+	int columns;
 	int price;
+	string** seats; 
+	int number = 0;
 public:
-	Room(int _number, int _seats, int price);
+	Room(int _rows, int columns, int price);
 	~Room();
-
+	void ShowSeats();
+	void FillSeats();
+	int getSeats();
+	int getPrice();
+	int getTotalPrice();
 };
 
